@@ -90,3 +90,38 @@ where email is NULL;
 
 --if you see the email is null then it will show the data otherwise it will show the data where email is not null
 select coalesce(email, 'No Email') as "Email Address" from students;
+
+
+select * from students 
+where country = 'USA' or country = 'canada' ;
+
+--Here we are using IN operator to filter the data based on multiple countries
+select * from students 
+where country IN ('USA', 'Canada', 'UK');
+
+--here we are using NOT IN operator to filter the data based on multiple countries
+select * from students 
+where country NOT IN ('USA', 'Canada', 'UK');
+
+
+--Here we are using BETWEEN operator to filter the data based on age range
+select * from students 
+where age BETWEEN 20 AND 22;
+
+
+--Here we are using BETWEEN operator to filter the data based on date of birth range
+select * from students 
+where dob BETWEEN '2005-01-01' AND '2006-12-31' ORDER BY dob;
+
+
+--Here we are using LIKE operator to filter the data based on first name starting with 'A'
+select * from students 
+where first_name LIKE 'A%';
+
+select * from students 
+where first_name LIKE '%am';
+
+
+--Here we are using LIKE operator to filter the data based on first name ending with 'a'
+select * from students 
+where first_name LIKE '__a%';
