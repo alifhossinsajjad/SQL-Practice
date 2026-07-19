@@ -77,3 +77,16 @@ select upper(first_name) as "Uppercase First Name" from students;
 
 select * from students 
 where not (country = 'USA' );
+
+--if you see the email is not null then it will show the data otherwise it will show the data where email is null
+select * from students 
+where email is not NULL;
+
+
+--if you see the email is null then it will show the data otherwise it will show the data where email is not null
+select * from students 
+where email is NULL;
+
+
+--if you see the email is null then it will show the data otherwise it will show the data where email is not null
+select coalesce(email, 'No Email') as "Email Address" from students;
