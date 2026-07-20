@@ -16,17 +16,41 @@ blood_group VARCHAR(3),
 
 INSERT INTO students (first_name, last_name, age, grade, course, email, dob, blood_group, country)
 VALUES
-('Alice', 'Smith', 20, 'A', 'Mathematics', 'alice.smith@example.com', '2006-04-12', 'A+', 'USA'),
-('Ethan', 'Carter', 21, 'B+', 'Computer Science', 'ethan.carter@example.com', '2005-09-18', 'O-', 'Canada'),
-('Sophia', 'Patel', 19, 'A-', 'Biochemistry', 'sophia.patel@example.com', '2007-01-30', 'B+', 'UK'),
-('Liam', 'Nguyen', 22, 'B', 'Mechanical Engineering', 'liam.nguyen@example.com', '2004-11-05', 'AB+', 'Australia'),
-('Emma', 'Müller', 20, 'A', 'Physics', 'emma.mueller@example.com', '2006-07-22', 'A-', 'Germany'),
-('Jackson', 'Davis', 23, 'C', 'History', 'jackson.davis@example.com', '2003-03-14', 'O+', 'USA'),
-('Mia', 'Silva', 18, 'A+', 'Literature', 'mia.silva@example.com', '2008-05-09', 'B-', 'Brazil'),
-('Yusuf', 'Al-Farsi', 21, 'B-', 'Economics', 'yusuf.alfarsi@example.com', '2005-12-01', 'O+', 'UAE'),
-('Chloe', 'Dubois', 20, 'A', 'Art History', 'chloe.dubois@example.com', '2006-02-17', 'A+', 'France'),
-('Kenji', 'Sato', 22, 'B+', 'Data Science', 'kenji.sato@example.com', '2004-08-25', 'AB-', 'Japan');
-
+('Amara', 'Okonkwo', 20, 'A+', 'Data Science', 'amara.okonkwo@example.com', '2006-03-15', 'O+', 'Nigeria'),
+('Mateo', 'Fernandez', 21, 'A', 'Computer Science', 'mateo.f@example.com', '2005-08-22', 'A+', 'Argentina'),
+('Elena', 'Petrova', 19, 'A-', 'Mathematics', 'elena.p@example.com', '2007-01-11', 'B+', 'Russia'),
+('Aarav', 'Sharma', 22, 'A+', 'Physics', 'aarav.sharma@example.com', '2004-11-30', 'O-', 'India'),
+('Lucas', 'Martin', 20, 'A', 'Mechanical Engineering', 'lucas.m@example.com', '2006-05-14', 'AB+', 'France'),
+('Zara', 'Ali', 21, 'A-', 'Biochemistry', 'zara.ali@example.com', '2005-09-09', 'A-', 'Pakistan'),
+('Diego', 'Gomez', 23, 'B+', 'Economics', 'diego.g@example.com', '2003-04-18', 'O+', 'Mexico'),
+('Ji-Woo', 'Kim', 19, 'B', 'Literature', 'jiwoo.kim@example.com', '2007-07-07', 'B-', 'South Korea'),
+('Fatima', 'Al-Mansoor', 20, 'B-', 'Art History', 'fatima.am@example.com', '2006-02-25', 'A+', 'Qatar'),
+('Oliver', 'Jones', 22, 'B+', 'History', 'oliver.j@example.com', '2004-10-12', 'O-', 'UK'),
+('Sofia', 'Bianchi', 21, 'B', 'Data Science', 'sofia.b@example.com', '2005-12-05', 'AB-', 'Italy'),
+('Noah', 'Hansen', 20, 'B-', 'Computer Science', 'noah.h@example.com', '2006-06-19', 'O+', 'Denmark'),
+('Kofi', 'Mensah', 22, 'C+', 'Mathematics', 'kofi.m@example.com', '2004-02-28', 'B+', 'Ghana'),
+('Camila', 'Torres', 24, 'C', 'Physics', 'camila.t@example.com', '2002-09-14', 'A-', 'Colombia'),
+('Arjun', 'Patel', 21, 'C-', 'Mechanical Engineering', 'arjun.p@example.com', '2005-04-03', 'O+', 'India'),
+('Chloe', 'Wang', 19, 'C+', 'Biochemistry', 'chloe.w@example.com', '2007-11-21', 'AB+', 'China'),
+('Leo', 'Virtanen', 23, 'C', 'Economics', 'leo.v@example.com', '2003-08-30', 'B-', 'Finland'),
+('Youssef', 'El-Amin', 20, 'D+', 'History', 'youssef.ea@example.com', '2006-10-05', 'O-', 'Egypt'),
+('Isabella', 'Rossi', 22, 'D', 'Literature', 'isabella.r@example.com', '2004-01-17', 'A+', 'Italy'),
+('Santiago', 'Lopez', 21, 'A+', 'Computer Science', 'santiago.l@example.com', '2005-05-29', 'O+', 'Spain'),
+('Freja', 'Nielsen', 20, 'B+', 'Data Science', 'freja.n@example.com', '2006-11-12', 'A-', 'Norway'),
+('Hans', 'Gruber', 22, 'C', 'Physics', 'hans.g@example.com', '2004-07-04', 'B+', 'Austria'),
+('Mei-Ling', 'Chen', 19, 'A', 'Mathematics', 'meiling.c@example.com', '2007-03-24', 'O-', 'Taiwan'),
+('Alexander', 'Volkov', 23, 'F', 'Mechanical Engineering', 'alex.v@example.com', '2003-12-15', 'AB+', 'Russia'),
+('Layla', 'Haddad', 21, 'B-', 'Biochemistry', 'layla.h@example.com', '2005-02-10', 'B+', 'Lebanon'),
+('William', 'Smith', 20, 'B', 'Economics', 'william.s@example.com', '2006-08-01', 'O+', 'Australia'),
+('Ananya', 'Rao', 22, 'A-', 'Literature', 'ananya.rao@example.com', '2004-06-18', 'A+', 'India'),
+('Takahiro', 'Tanaka', 21, 'B+', 'Art History', 'takahiro.t@example.com', '2005-10-31', 'O-', 'Japan'),
+('Sonia', 'Dubois', 20, 'C+', 'History', 'sonia.d@example.com', '2006-04-20', 'AB-', 'Belgium'),
+('Gabriel', 'Barbosa', 22, 'A', 'Data Science', 'gabriel.b@example.com', '2004-09-02', 'O+', 'Brazil'),
+('Min-Ho', 'Lee', 19, 'F', 'Computer Science', 'minho.lee@example.com', '2007-05-13', 'A+', 'South Korea'),
+('Emma', 'Johnson', 21, 'B', 'Mathematics', 'emma.j@example.com', '2005-11-07', 'B-', 'New Zealand'),
+('Dmitry', 'Ivanov', 24, 'C-', 'Physics', 'dmitry.i@example.com', '2002-01-22', 'O+', 'Russia'),
+('Zainab', 'Musa', 20, 'A+', 'Biochemistry', 'zainab.m@example.com', '2006-12-28', 'A-', 'Nigeria'),
+('Ali', 'Hassan', 22, 'B+', 'Mechanical Engineering', 'ali.hassan@example.com', '2004-03-19', 'AB+', 'Saudi Arabia');
 
 select * from students;
 
@@ -125,3 +149,26 @@ where first_name LIKE '%am';
 --Here we are using LIKE operator to filter the data based on first name ending with 'a'
 select * from students 
 where first_name LIKE '__a%';
+
+
+--Here we are using LIMIT operator to limit the number of rows returned by the query 
+select * from students LIMIT 5;
+
+
+--Here we are using LIMIT and OFFSET operator to limit the number of rows returned by the query and skip the first 5 rows 
+select * from students LIMIT 5 OFFSET 5 * 0;
+select * from students LIMIT 5 OFFSET 5 * 1;
+select * from students LIMIT 5 OFFSET 5 * 2;
+select * from students LIMIT 5 OFFSET 5 * 3;
+
+
+--Here we are using DELETE operator to delete the data from the table based on condition
+Delete from students 
+where grade = 'B';
+
+select * from students;
+
+    update students
+    set course = 'Cyber Security'
+    where student_id = 10; 
+select * from students;
