@@ -88,3 +88,70 @@ SELECT * from employees;
 
 SELECT extract (YEAR FROM hire_date) as hired_year, count(*) FROM employees
 GROUP BY hired_year
+
+
+
+
+CREATE TABLE orders (
+    order_id SERIAL PRIMARY KEY,
+    customer_id INT,
+    order_date DATE,
+    total_amount DECIMAL(10,2)
+);
+
+
+
+INSERT INTO orders (customer_id, order_date, total_amount)
+VALUES
+(101, '2026-01-05', 250.50),
+(101, '2026-01-10', 450.00),
+(101, '2026-01-15', 899.99),
+(101, '2026-02-02', 1200.00),
+(102, '2026-01-08', 1200.00),
+(102, '2026-01-22', 980.00),
+(102, '2026-02-05', 560.75),
+(102, '2026-02-18', 1500.00),
+(103, '2026-01-10', 799.99),
+(103, '2026-02-01', 299.99),
+(103, '2026-02-10', 1800.50),
+(103, '2026-02-25', 430.00),
+(104, '2026-01-18', 150.00),
+(104, '2026-02-10', 670.20),
+(104, '2026-02-15', 1250.75),
+(104, '2026-03-01', 980.00),
+(105, '2026-01-20', 3200.40),
+(105, '2026-02-12', 2100.00),
+(105, '2026-02-20', 500.50),
+(105, '2026-03-05', 850.75),
+(105, '2026-03-10', 1750.00),
+(106, '2026-01-25', 550.25),
+(106, '2026-02-14', 780.00),
+(106, '2026-03-08', 920.00),
+(107, '2026-01-28', 1750.60),
+(107, '2026-02-16', 1250.00),
+(107, '2026-03-12', 2100.50),
+(108, '2026-02-03', 899.50),
+(108, '2026-02-22', 450.75),
+(108, '2026-03-15', 999.99),
+(109, '2026-02-05', 430.00),
+(109, '2026-02-25', 780.80),
+(109, '2026-03-18', 1500.25),
+(110, '2026-02-08', 1250.75),
+(110, '2026-02-28', 990.50),
+(110, '2026-03-20', 1800.00);
+
+DROP table orders;
+
+
+
+
+
+select customer_id , count(order_id),sum(total_amount) as total_spent FROM orders
+GROUP BY customer_id
+HAVING count(order_id) >2;
+
+
+SELECT to_char(order_date, 'Month') as month_name , sum(total_amount) as Total_Amount FROM orders
+WHERE EXTRACT(YEAR FROM order_date) =2026
+GROUP BY to_char(order_date , 'Month') , EXTRACT (MONTH FROM order_date)
+ORDER BY EXTRACT(MONTH from order_date);
