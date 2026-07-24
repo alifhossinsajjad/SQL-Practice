@@ -68,3 +68,6 @@ WHERE salary > (
     FROM employees 
     WHERE department_name='HR'
 );
+
+
+SELECT * , (SELECT sum(salary) FROM employees) FROM employees;
