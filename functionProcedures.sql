@@ -28,3 +28,30 @@ $$;
 SELECT * FROM employees;    
 
 SELECT del_emp_by_id(40);
+
+
+
+
+
+
+
+
+-- how to use PROCEDURE\
+
+
+
+CREATE Procedure remove_emp()
+LANGUAGE plpgsql
+as 
+$$
+
+BEGIN
+DELETE from employees WHERE employee_id = 35;
+END
+$$
+
+
+call remove_emp();
+
+
+select * FROM employees;
